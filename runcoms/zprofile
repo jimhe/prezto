@@ -72,3 +72,12 @@ if [[ ! -d "$TMPDIR" ]]; then
 fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
+
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jimhe/bin:/opt/chefdk/bin"
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+export CHEF_USER=jhe
+
+eval "$(boot2docker shellinit)"
+
+export GERRIT_USER=jim.he
